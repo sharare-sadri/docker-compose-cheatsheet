@@ -1,0 +1,11 @@
+version: !!str 3
+services:
+  nginx:
+    build: .
+    image: nginx
+     networks:
+         - nginx
+
+networks:
+  nginx:
+    external: true
